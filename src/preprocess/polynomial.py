@@ -49,4 +49,4 @@ class PloynomialFeature:
         for degree in range(1, self.degeree + 1):
             for items in combinations_with_replacement(x_t, degree):
                 features.append(functools.reduce(lambda x, y: x * y, items))
-        return np.asarry(features).transpose()
+        return np.asarray(features).transpose()
